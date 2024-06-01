@@ -24,5 +24,4 @@ jobs:
         private_key: ${{secrets.SSH_PRIVATE_KEY}}
         command: |
           pwd;
-          echo "F!@";
           lscpu;
