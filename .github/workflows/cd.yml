@@ -23,5 +23,5 @@ jobs:
         user: ${{secrets.SSH_USER}}
         private_key: ${{secrets.SSH_PRIVATE_KEY}}
         command: |
-          cp /var/ftp/pub/* . ;
+          cp -r /var/ftp/pub/* . ;
           docker build . -t homework:0.1;
