@@ -24,4 +24,4 @@ jobs:
         private_key: ${{secrets.SSH_PRIVATE_KEY}}
         command: |
           cp -r /var/ftp/pub/* . ;
-          docker build . -t homework:0.1;
+          sudo docker build . -t homework:0.1;
